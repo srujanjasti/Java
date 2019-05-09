@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="./Weather" method="get">
+<form action="webresources/Weather" method="get">
 
 <br><input type = "submit" value="Submit"/>
 </form>

@@ -13,14 +13,13 @@ import javax.ws.rs.Produces;
 /** Example resource class hosted at the URI path "/myresource"
  */
 @Path("/Weather")
-public class Weather() {
-    
+public class Weather {
     
     @GET 
     @Produces("MediaType.APPLICATION_JSON")
     public static void doHttpGet() {
 
-        String url = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/348735?apikey=" + ApiKey.getApiKey();
+        String url = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/348735?apikey=pzzPdFYfqzxeUeYYsCz4TFlD7GwnNZFd";
 
         CloseableHttpClient client = HttpClients.createDefault();
         HttpGet get = new HttpGet(url);
@@ -39,5 +38,5 @@ public class Weather() {
         }
     }
 }
-}
+
 
